@@ -18,7 +18,7 @@ import scikitLearn from '../assets/scikitLearn.png';
 import tensorflow from '../assets/tensorflow.png';
 import folium from '../assets/folium.png';
 import fastAPI from '../assets/fastAPI.png';
-import tableu from '../assets/tableu.png';
+import tableau from '../assets/tableu.png';
 import aws from '../assets/aws.png';
 import azure from '../assets/azure.png';
 import virtualbox from '../assets/virtualbox.png';
@@ -26,6 +26,8 @@ import kalilinux from '../assets/kalilinux.png';
 import wireshark from '../assets/wireshark.png';
 import nmap from '../assets/nmap.png';
 import sentinelOne from '../assets/sentinelOne.png';
+import openCV from '../assets/openCV.png';
+import streamlit from '../assets/streamlit.png';
 
 const Programming = [
     { name: 'Python', icon: python },
@@ -36,30 +38,36 @@ const Programming = [
     { name: 'HTML', icon: html },
     { name: 'Tailwind CSS', icon: tailwind },
     { name: 'React JS', icon: reactjs },
-    { name: 'MySQL', icon: mysql },
-    { name: 'PostgreSQL', icon: postgresql },
-    { name: 'MongoDB', icon: mongodb },
+    { name: 'Streamlit', icon: streamlit },  
+    { name: 'OpenCV', icon: openCV }         
 ];
 
-const Frameworks = [
-    { name: 'Matplotlib', icon: matplotlib },
-    { name: 'Pandas', icon: pandas },
+const LibrariesAndFrameworks = [
     { name: 'NumPy', icon: numpy },
-    { name: 'ScikitLearn', icon: scikitLearn },
-    { name: 'Tensorflow', icon: tensorflow },
-    { name: 'Seaborn', icon: folium },
-    { name: 'FastAPI', icon: fastAPI }
+    { name: 'Pandas', icon: pandas },
+    { name: 'Matplotlib', icon: matplotlib },
+    { name: 'Seaborn', icon: seaborn }, 
+    { name: 'Scikit-Learn', icon: scikitLearn },
+    { name: 'TensorFlow', icon: tensorflow },
+    { name: 'FastAPI', icon: fastAPI },
+    { name: 'Folium', icon: folium }   
+];
+
+const Databases = [
+    { name: 'MySQL', icon: mysql },
+    { name: 'PostgreSQL', icon: postgresql },
+    { name: 'MongoDB', icon: mongodb }
 ];
 
 const Tools = [
-    { name: 'Tableu', icon: tableu },
+    { name: 'Tableau', icon: tableau },
     { name: 'AWS', icon: aws },
     { name: 'Azure', icon: azure },
     { name: 'VirtualBox', icon: virtualbox },
     { name: 'Kali Linux', icon: kalilinux },
     { name: 'Wireshark', icon: wireshark },
     { name: 'Nmap', icon: nmap },
-    { name: 'SentinelOne', icon: sentinelOne },
+    { name: 'SentinelOne', icon: sentinelOne }
 ];
 
 const TechSkills = () => {
@@ -109,8 +117,9 @@ const TechSkills = () => {
         const calculateRowsForAllCategories = () => {
             const rowsData = {
                 Programming: calculateRows(window.innerWidth, Programming),
+                LibrariesAndFrameworks: calculateRows(window.innerWidth, LibrariesAndFrameworks),
+                Databases: calculateRows(window.innerWidth, Databases),
                 Tools: calculateRows(window.innerWidth, Tools),
-                Frameworks: calculateRows(window.innerWidth, Frameworks),
             };
             setRows(rowsData);
         };
