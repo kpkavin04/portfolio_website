@@ -28,21 +28,24 @@ import nmap from '../assets/nmap.png';
 import sentinelOne from '../assets/sentinelOne.png';
 import openCV from '../assets/openCV.png';
 import streamlit from '../assets/streamlit.png';
+import seaborn from '../assets/seaborn.png';
 
-const Programming = [
+const ProgrammingLanguages = [
     { name: 'Python', icon: python },
     { name: 'Java', icon: java },
     { name: 'R', icon: r },
     { name: 'JavaScript', icon: javascript },
     { name: 'TypeScript', icon: typescript },
     { name: 'HTML', icon: html },
-    { name: 'Tailwind CSS', icon: tailwind },
-    { name: 'React JS', icon: reactjs },
-    { name: 'Streamlit', icon: streamlit },  
-    { name: 'OpenCV', icon: openCV }         
+
+       
 ];
 
 const LibrariesAndFrameworks = [
+    { name: 'React JS', icon: reactjs },
+    { name: 'Tailwind CSS', icon: tailwind },
+    { name: 'Streamlit', icon: streamlit },  
+    { name: 'OpenCV', icon: openCV },
     { name: 'NumPy', icon: numpy },
     { name: 'Pandas', icon: pandas },
     { name: 'Matplotlib', icon: matplotlib },
@@ -69,6 +72,13 @@ const Tools = [
     { name: 'Nmap', icon: nmap },
     { name: 'SentinelOne', icon: sentinelOne }
 ];
+
+const formatCategoryName = (key) => {
+    return key
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .replace(/And/g, ' &')
+        .replace(/^./, str => str.toUpperCase());
+};
 
 const TechSkills = () => {
     const [rows, setRows] = useState({
@@ -116,7 +126,7 @@ const TechSkills = () => {
     useEffect(() => {
         const calculateRowsForAllCategories = () => {
             const rowsData = {
-                Programming: calculateRows(window.innerWidth, Programming),
+                ProgrammingLanguages: calculateRows(window.innerWidth, ProgrammingLanguages),
                 LibrariesAndFrameworks: calculateRows(window.innerWidth, LibrariesAndFrameworks),
                 Databases: calculateRows(window.innerWidth, Databases),
                 Tools: calculateRows(window.innerWidth, Tools),
@@ -188,7 +198,7 @@ const TechSkills = () => {
                     >
                         <h2 className="text-transparent bg-clip-text 
                                     bg-gradient-to-r from-green-400
-                                    to-blue-500 font-bold text-4xl py-4">{category}</h2>
+                                    to-blue-500 font-bold text-4xl py-4">{formatCategoryName(category)}</h2>
                         <div className="honeycomb-grid">
                             {categoryRows.map((row, rowIndex) => (
                                 <div
