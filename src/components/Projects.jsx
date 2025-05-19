@@ -23,7 +23,7 @@ const projects = [
         name: "Barbell Path Tracker",
         technologies: "Python, OpenCV, Streamlit",
         image: BPTImg,
-        github: ""
+        github: "https://github.com/kpkavin04/Barbell_Path_Tracker.git"
     }
 ]
 const Projects = () => {
