@@ -37,8 +37,6 @@ const ProgrammingLanguages = [
     { name: 'JavaScript', icon: javascript },
     { name: 'TypeScript', icon: typescript },
     { name: 'HTML', icon: html },
-
-       
 ];
 
 const LibrariesAndFrameworks = [

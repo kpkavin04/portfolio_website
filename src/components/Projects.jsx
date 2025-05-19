@@ -1,6 +1,7 @@
 import React from 'react'
 import OPRGImg from '../assets/mrt-map.png'
-import VMIMG from '../assets/VoucherManagerIMG.png'
+import VMImg from '../assets/VoucherManagerIMG.png'
+import BPTImg from '../assets/BarbellPathTrackerImg.png'
 
 const projects = [
     {
@@ -14,9 +15,16 @@ const projects = [
         id: 2,
         name: "Voucher Manager",
         technologies: "HTML, CSS, JavaScript, Python",
-        image: VMIMG,
+        image: VMImg,
         github: "https://github.com/me50/kpkavin04.git"
     },
+    {
+        id: 3,
+        name: "Barbell Path Tracker",
+        technologies: "Python, OpenCV, Streamlit",
+        image: BPTImg,
+        github: ""
+    }
 ]
 const Projects = () => {
     return (
