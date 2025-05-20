@@ -173,11 +173,26 @@ const TechSkills = () => {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    cursor: pointer;
                 }
                 .hexagon img {
                     width: 70%;
                     height: 70%;
                     object-fit: contain;
+                }
+                .hexagon span {
+                    position: absolute;
+                    bottom: 10px;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                .hexagon:hover span {
+                    opacity: 1;
                 }
                 `}
             </style>
@@ -213,6 +228,7 @@ const TechSkills = () => {
                                             whileHover="hover"
                                         >
                                             <img src={tech.icon} alt={tech.name} />
+                                            <span>{tech.name}</span>
                                         </motion.div>
                                     ))}
                                 </div>
