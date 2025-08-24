@@ -11,7 +11,7 @@ const projects = [
         id: 1,
         name: "Patrol Route Generator",
         technologies: "HTML, CSS, JavaScript, Python",
-        description: "Application to optimise patrol routes taken by police officers patrolling the Mass Rapid Transit(MRT)",
+        description: "Optimisation of patrol routes taken by police officers patrolling the Mass Rapid Transit(MRT)",
         image: OPRGImg,
         github: 'https://github.com/kpkavin04/LifeHack-DriversLicense.git'
     },
@@ -19,7 +19,7 @@ const projects = [
         id: 2,
         name: "Voucher Manager",
         technologies: "HTML, CSS, JavaScript, Python",
-        description: "Website to allow users to manage their vouchers",
+        description: "Allow users to manage their vouchers and automate emails to remind user regarding expiring foods",
         image: VMImg,
         github: "https://github.com/me50/kpkavin04.git"
     },
@@ -27,22 +27,22 @@ const projects = [
         id: 3,
         name: "Barbell Path Tracker",
         technologies: "Python, OpenCV, Streamlit",
-        description: "Website to visualise the path taken by a barbell during workouts",
+        description: "Visualises the path taken by a barbell during workouts",
         image: BPTImg,
         github: "https://github.com/kpkavin04/Barbell_Path_Tracker.git"
     },
     {
         id: 4,
         name: "SafetyFirst",
-        technologies: "React Native, Expo, Supabase, expressJS, openAI API",
-        description: "Centralised platform for crisis reporting in Singapore",
+        technologies: "React Native, Expo, Supabase, expressJS, openAI LLM API",
+        description: "Centralised platform for crisis reporting in Singapore that solves the lack of emergency preparedness, inefficient crisis reporting and lack of interactive access to live incidents",
         image: SafetyFirstImg,
         github: "https://github.com/nazeeeef007/brainhack.git"
     },
     {
         id: 5,
         name: "Rizztaurant",
-        technologies: "React Native, Expo, Supabase authentication & storage, Node.js, Google Places API, Google Maps API, Groq LLM API",
+        technologies: "React Native, Expo, Supabase authentication & storage, Node.js, Google Places & Maps API, Groq LLM API",
         description: "Full stack mobile application that functions like a \"restaurant dating app,\" allowing users to discover, save, and manage dining options through an intuitive, Tinder-style swiping interface ",
         image: RizztaurantImg,
         github: "https://github.com/shijiken/rizztaurant.git"
@@ -51,7 +51,7 @@ const projects = [
         id: 6,
         name: "Mass Games Score Tracker",
         technologies: "Python, Telethon library",
-        description: "Python script to automate the score tabulation based off text submissions of completed missions updated in a telegram groupchat",
+        description: "Python script to automate the score tabulation based off text submissions of completed missions updated in a telegram groupchat saving countless hours otherwise spent on manual tabulation",
         image: DrabroksiQuestTrackerImg,
         github: "https://github.com/kpkavin04/Drabroksi_Quest_Tracker.git"
     },
