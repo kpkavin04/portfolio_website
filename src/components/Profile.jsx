@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProfileImg from '../assets/kavin_pic.jpg'
 import { motion } from "framer-motion";
-import Resume from '../assets/Kavin_Parthipan_Resume.pdf';
+import Resume from '../assets/Parthipan_Kavin_Resume.pdf';
 
 const Profile = () => {
     const typedItems = [

@@ -86,15 +86,30 @@ Please change the parent <Route path="${x}"> to <Route path="${x==="/"?"*":`${x}
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    cursor: pointer;
                 }
                 .hexagon img {
                     width: 70%;
                     height: 70%;
                     object-fit: contain;
                 }
+                .hexagon span {
+                    position: absolute;
+                    bottom: 10px;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                .hexagon:hover span {
+                    opacity: 1;
+                }
                 `}),K.jsxs("div",{className:"container mx-auto px-8 md:px-16 lg:px-24 flex flex-col items-center gap-2",children:[K.jsx("h2",{className:"text-4xl font-bold text-center mb-4",children:"Technical Skills"}),Object.entries(t).map(([d,h])=>K.jsxs(eo.div,{className:"category-container w-full flex flex-col items-center",animate:o,variants:{hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.1}}},children:[K.jsx("h2",{className:`text-transparent bg-clip-text 
                                     bg-gradient-to-r from-green-400
-                                    to-blue-500 font-bold text-4xl py-4`,children:H_(d)}),K.jsx("div",{className:"honeycomb-grid",children:h.map((p,g)=>K.jsx("div",{className:`honeycomb-row ${g%2===1?"staggered-row":""}`,children:p.map(v=>K.jsx(eo.div,{className:"hexagon",variants:f,initial:"hidden",animate:"visible",whileHover:"hover",children:K.jsx("img",{src:v.icon,alt:v.name})},v.name))},`${d}-row-${g}`))})]},d))]})]})};var Nr={},uf={exports:{}};/*!
+                                    to-blue-500 font-bold text-4xl py-4`,children:H_(d)}),K.jsx("div",{className:"honeycomb-grid",children:h.map((p,g)=>K.jsx("div",{className:`honeycomb-row ${g%2===1?"staggered-row":""}`,children:p.map(v=>K.jsxs(eo.div,{className:"hexagon",variants:f,initial:"hidden",animate:"visible",whileHover:"hover",children:[K.jsx("img",{src:v.icon,alt:v.name}),K.jsx("span",{children:v.name})]},v.name))},`${d}-row-${g}`))})]},d))]})]})};var Nr={},uf={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
 	http://jedwatson.github.io/classnames

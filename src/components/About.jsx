@@ -11,7 +11,7 @@ const About = () => {
                         className='w-72 h-80 rounded object-cover mb-8 md:mb-0'/>
                     <div className='flex-1'>
                         <p className='mt-4 text-lg py-2'>
-                            I'm a Business Analytics undergraduate at the National University of Singapore (NUS) with a strong interest in software engineering and data-driven solutions. I enjoy designing and building scalable, user-focused applications that solve real-world problems. From writing clean, efficient code to deploying full-stack projects, I’m always eager to push my technical boundaries and explore new tools and frameworks.
+                            I'm a Computer Science undergraduate at the National University of Singapore (NUS) with a strong interest in software engineering and data-driven solutions. I enjoy designing and building scalable, user-focused applications that solve real-world problems. From writing clean, efficient code to deploying full-stack projects, I’m always eager to push my technical boundaries and explore new tools and frameworks.
                         </p>
                         <p className='mt-4 text-lg py-2'>
                             I bring a mix of analytical thinking, creativity, and leadership. Whether it’s contributing to collaborative codebases, optimizing performance, or leading innovative tech initiatives, I thrive in fast-paced, problem-solving environments. I'm driven by impact, continuously learning, and excited to take on complex challenges that create real value.
