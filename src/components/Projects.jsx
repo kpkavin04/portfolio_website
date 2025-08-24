@@ -4,7 +4,7 @@ import VMImg from '../assets/VoucherManagerIMG.png'
 import BPTImg from '../assets/BarbellPathTrackerImg.png'
 import SafetyFirstImg from '../assets/SafetyFirst.png'
 import RizztaurantImg from '../assets/Rizztaurant.png'
-import DrabroksiQuestTrackerImg from '../assets/DrabroksiQuestTracker.png'
+import DrabroksiQuestTrackerImg from '../assets/DrabroskiQuestTracker.png'
 
 const projects = [
     {
