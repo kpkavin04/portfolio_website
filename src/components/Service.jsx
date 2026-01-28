@@ -8,21 +8,26 @@ const services = [
     }, 
     {
         id: 2,
-        title: 'Machine Learning Engineering',
-        description: 'Developing AI models to solve real-world problems and optimize decision-making',
+        title: 'ML Engineering',
+        description: 'Designing, training, and deploying machine learning pipelines to power predictive systems and data-driven products at scale',
     },
     {
         id: 3,
+        title: 'AI Engineering',
+        description: 'Building and integrating intelligent systems using modern AI and LLM frameworks to automate workflows and enhance decision-making',
+    },
+    {
+        id: 4,
         title: 'Data Analysis & Visualisation',
         description: 'Turning raw data into clear, actionable insights with advanced analytics and visuals',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Database Management',
         description: 'Designing secure, efficient databases for seamless data storage and retrieval',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Product Management',
         description: 'Driving product strategy, development, and execution for impactful digital solutions',
     },
@@ -38,10 +43,6 @@ const Service = () => {
                                                         hover:shadow-lg transform
                                                         transition-transform duration-300
                                                         hover:scale-105'>
-                            <div className='text-right text-2xl font-bold text-transparent bg-clip-text
-                                            bg-gradient-to-r from-green-600 to-blue-400'>
-                            {service.id}
-                            </div>
                             <h3 className='mt-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r
                                             from-green-400 to-blue-500'>
                                 {service.title}

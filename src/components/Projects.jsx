@@ -5,6 +5,11 @@ import BPTImg from '../assets/BarbellPathTrackerImg.png'
 import SafetyFirstImg from '../assets/SafetyFirst.png'
 import RizztaurantImg from '../assets/Rizztaurant.png'
 import DrabroksiQuestTrackerImg from '../assets/DrabroskiQuestTracker.png'
+import verifAiImg from '../assets/VerifAI_arch_diagram_pic.png'
+import ExpenseTrackerImg from '../assets/ExpenseTrackerImg.png'
+import AIVideoClipSelectorImg from '../assets/AI_Video_Clip_Selector.png'
+import MinimalTemporalJobServiceImg from '../assets/MinimalTemporalJobServiceImg.png'
+import TelegramWrappedImg from '../assets/TelegramWrapped.jpg'
 
 const projects = [
     {
@@ -54,6 +59,46 @@ const projects = [
         description: "Python script to automate the score tabulation based off text submissions of completed missions updated in a telegram groupchat saving countless hours otherwise spent on manual tabulation",
         image: DrabroksiQuestTrackerImg,
         github: "https://github.com/kpkavin04/Drabroksi_Quest_Tracker.git"
+    },
+    {
+        id: 7,
+        name: "Expense Tracker",
+        technologies: "ExpressJS, NodeJS, React(TypeScript), MongoDB",
+        description: "A MERN-stack expense tracking application featuring JWT-secured authentication, full CRUD operations, and a scalable backend designed for advanced analytics and AI-driven financial insights",
+        image: ExpenseTrackerImg,
+        github: "https://github.com/kpkavin04/Expense_Tracker.git"
+    },
+    {
+        id: 8,
+        name: "VerifAI",
+        technologies: "RAG, SentenceTransformers, LLM, FastApi, ChromaDB",
+        description: "A refusal-aware RAG system for proprietary documents that prioritizes grounding, confidence estimation, and observability over answer rate",
+        image: verifAiImg,
+        github: "https://github.com/kpkavin04/VerifAI.git"
+    },
+    {
+        id: 9,
+        name: "AI Video Clip Selector",
+        technologies: "Docker, FastApi, Uvicorn, AWS, ffmpeg, React, TailwindCSS, openAI API",
+        description: "An AWS-hosted containerized API for automated video selection, clipping, and media curation that prioritizes automated environment configuration, robust error observability, and process isolation within a managed cloud environment",
+        image: AIVideoClipSelectorImg,
+        github: "https://github.com/kpkavin04/videotto-project.git"
+    },
+    {
+        id: 10,
+        name: "Minimal Temporal Job Service",
+        technologies: "Temporal, Docker, FastApi, Uvicorn",
+        description: "A FastAPI service integrated with Temporal for reliable job execution with automatic retries",
+        image: MinimalTemporalJobServiceImg,
+        github: "https://github.com/kpkavin04/Minimal-Temporal-Job-Service.git"
+    },
+    {
+        id: 11,
+        name: "Telegram Wrapped",
+        technologies: "Telethon, React, TailwindCSS,  FastApi, Uvicorn",
+        description: "A full-stack analytics platform for personal Telegram archives that prioritizes secure client-side parsing, asynchronous data processing, and visualization of messaging trends and user behaviors through sentiment analysis powered by OpenAI",
+        image: TelegramWrappedImg,
+        github: "https://github.com/kpkavin04/TelegramWrapped.git"
     },
 ]
 

@@ -5,18 +5,27 @@ import { FaBriefcase } from 'react-icons/fa';
 import quadrant_pic from '../assets/kavin_quadrant_pic.png';
 import transcom_pic from '../assets/kavin_transcom_pic.png';
 import fintech_pic from '../assets/kavin_fintech_pic.png';
+import cdg_pic from '../assets/kavin_cdg_pic.jpg';
 
 const experiences = [
     {
         id: 1,
+        title: "Data Science Intern",
+        company: "Comfort Delgro",
+        description: "Developed and deployed a large-scale Python web scraper to production on Google Cloud Run, extracting data from over 14,000 SGCarMart vehicle listings to enhance valuation accuracy for ComfortDelGro Rent-A-Car’s fleet ",
+        image: cdg_pic, 
+        date: "Sep 2025 - Nov 2025"
+    },
+    {
+        id: 2,
         title: "Machine Learning Analyst",
         company: "NUS Fintech Society",
         description: "Researched and implemented the RAG component in a Financial Literacy AI Tutor project. Predicted stock prices using LSTM and deployed via FastAPI.",
         image: fintech_pic, 
-        date: "Aug 2024 - Present"
+        date: "Aug 2024 - May 2025"
     },
     {
-        id: 2,
+        id: 3,
         title: "Cyber Security Intern",
         company: "Quadrant360",
         description: "Conducted vulnerability assessments, documented reports, and co-developed a controlled demonstration of malware-based attacks.",
@@ -24,7 +33,7 @@ const experiences = [
         date: "Jan 2024 - Apr 2024"
     },
     {
-        id: 3,
+        id: 4,
         title: "Deputy Team Leader",
         company: "Singapore Police Force (Transcom)",
         description: "Led a team of 100+ officers, planned operations, managed crisis responses, and improved documentation efficiency using Excel.",

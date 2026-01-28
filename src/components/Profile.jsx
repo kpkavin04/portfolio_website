@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import ProfileImg from '../assets/kavin_pic.jpg'
 import { motion } from "framer-motion";
-import Resume from '../assets/Parthipan_Kavin_Resume.pdf';
 
 const Profile = () => {
     const typedItems = [
-        "Software Engineer",
-        "Product Manager",
-        "Data Analyst",
-        "Machine Learning Enthusiast"
+        "Software Engineering",
+        "AI Engineering",
+        "Data Analysis",
+        "Data Engineering"
     ];
 
     return (
@@ -23,7 +22,7 @@ const Profile = () => {
                                     to-blue-500'>Kavin</span>
             </h1>
             <p className={`mt-2 text-3xl text-white-100 font-bold`}>
-                I'm a <TypewriterText texts={typedItems} />
+                I do <TypewriterText texts={typedItems} />
             </p>
             <div className='mt-8 space-x-4'>
                 <a href="https://www.linkedin.com/in/kavin-parthipan/" target="_blank" rel="noopener noreferrer">
@@ -33,7 +32,7 @@ const Profile = () => {
                         Connect with me
                     </button>
                 </a>
-                <a href={Resume} target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/document/d/1F7opbcmPfbAU9K-29-MIXtQNdSBsEMsLq_oZWprXhjk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className='bg-gradient-to-r from-blue-400 to-green-500 text-white font-bold 
                                     hidden md:inline transform transition-transform duration-300
                                     hover:scale-110 px-4 py-2 rounded-full'>
